@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <div class="description">
+        <h1>The Neapolitan Grid</h1>
+        <p>Use your mouse to click, drag, fill, and clear colors from the scene! This palette was inspired by the colors of Neapolitan ice cream.</p>
+    </div>
+    <div class="bTContainer">
+        <div class="buttonAndTable">
+            <button onclick="addRow()">Add a row</button>
+            <button onclick="addColumn()">Add a column</button>
+            <button onclick="removeRow()">Remove a row</button>
+            <button onclick="removeColumn()">Remove a column</button>
+            
+            <!--<button onclick="cycleColor()">Cycle color</button>-->
+            <select onchange="updateSelectedColor()">
+                <option id="default">Default</option>
+                <option id="algae">Algae</option>
+                <option id="pink">Pink</option>
+                <option id="copper">Copper</option>
+                <option id="red">Red</option>
+                <option id="tango">Tango</option>
+            </select>
+
+            <table id="main-grid" class="center">
+                <tbody>
+                    <tr>
+                        <td class="default" onclick="this.className = currentColor" onmousedown="this.className = currentColor"></td>
+                        <td class="default" onclick="this.className = currentColor" onmousedown="this.className = currentColor"></td>
+                    </tr>
+                    <tr>
+                        <td class="default" onclick="this.className = currentColor" onmousedown="this.className = currentColor"></td>
+                        <td class="default" onclick="this.className = currentColor" onmousedown="this.className = currentColor"></td>
+                    </tr> 
+                </tbody>
+            </table>
+            <button onclick="clearCells()">Clear all cells</button>
+            <button onclick="fillAllCells()">Fill all cells</button>
+            <button onclick="fillEmptyCells()">Fill empty cells</button>
+        </div>
+    </div>
+</body>
+</html>

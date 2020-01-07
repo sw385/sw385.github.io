@@ -1,0 +1,95 @@
+@font-face {
+	font-family: hornbill;
+	src: url("hornbill-personal-use.bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: worksans;
+	src: url("work-sans.regular.ttf");
+}
+
+/* On screens that are 992px or less, don't have to fill the screen as much */
+@media screen and (max-width: 1920px) {
+ 	p {
+ 		padding-left: 32%;
+		padding-right: 32%;
+		width: 36%;
+ 	}
+}
+
+/* On screens that are 600px, fill the screen more */
+@media screen and (max-width: 600px) {
+	p {
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+}
+
+.bTContainer {
+	text-align: center;
+}
+
+.buttonAndTable {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: hornbill;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+p {
+	overflow-wrap: break-word;
+	font-family: worksans;
+	text-align: center;
+}
+
+button, select {
+	background-color: gray;
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	font-family: arial;
+}
+
+td {
+    height: 40px;
+    width: 40px; 
+}
+
+td.default {
+    background: #e6e6e6;
+}
+
+td.algae {
+    background: #96e3c0;
+}
+
+td.pink {
+    background: #ffc0cb;
+}
+
+td.copper {
+    background: #7e3f12;
+}
+
+td.red {
+    background: #cd3333;
+}
+
+td.tango {
+    background: #ee7621;
+}
+
